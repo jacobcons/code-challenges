@@ -268,26 +268,24 @@ Write a function `sum(n)` that returns the sum of all the integers between `1` (
 
 ```javascript
 // Examples:
-sum(5) -> 15
+sum(5) -> 15 (because 1 + 2 + 3 + 4 + 5 = 15)
 sum(10) -> 55
 ```
 
 #### Exercise 5: Sum of Multiples
 
-Write a function `sumOfMultiples(x, n)` that calculates and prints the sum of the multiples of `x` up to `n`.
+Write a function `sumOfMultiples(x, n)` that returns the sum of the multiples of `x` up to `n`.
 
 ```javascript
 // Examples:
-sumOfMultiples(3, 10);
-// Output: 18 (3 + 6 + 9)
+sumOfMultiples(3, 10) -> 18 (because 3 + 6 + 9 = 18)
 
-sumOfMultiples(5, 20);
-// Output: 50 (5 + 10 + 15 + 20)
+sumOfMultiples(5, 20) -> 50 (because 5 + 10 + 15 + 20 = 50)
 ```
 
 #### Exercise 6: Collatz Conjecture
 
-Write a function `collatz(n)` that prints the sequence of numbers according to the Collatz conjecture, starting from `n`. The rule is: if `n` is even, divide it by 2; if `n` is odd, multiply it by 3 and add 1. Stop when `n` reaches 1.
+Write a function `collatz(n)` that prints the sequence of numbers according to the Collatz conjecture, starting from `n`. The rule is: if `n` is even, divide it by 2; if `n` is odd, multiply it by 3 and add 1. Stop when `n` reaches 1 (the conjecture claims that no matter which positive integer you start with, you will always eventually reach the number 1)
 
 ```javascript
 // Examples:
