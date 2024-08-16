@@ -162,8 +162,8 @@ Write a function `calculatePercentage(part, whole)` that returns the percentage 
 
 ```javascript
 // Examples:
-calculatePercentage(50, 200) -> 25
-calculatePercentage(37, 80) -> 46
+calculatePercentage(50, 200) -> "25%"
+calculatePercentage(37, 80) -> "46%"
 ```
 
 ### Exercise 3: Coin Flip
