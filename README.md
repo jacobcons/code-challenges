@@ -125,7 +125,7 @@ numberAtPosition(100) -> 5
 ```javascript
 // Examples:
 passTheParcel(3, 2) -> 5 (person 3 has it, it gets passed 2 people along, so now person 5 has it)
-passTheParcel(4, 3) -> (person 5 has it, it gets passed 3 people along so it goes to 5, back to 0 and then to 1)
+passTheParcel(4, 3) -> (person 4 has it, it gets passed 3 people along so it goes to 5, back to 0 and then to 1)
 ```
 
 ### Exercise 5: Future Day of the Week (difficult)
