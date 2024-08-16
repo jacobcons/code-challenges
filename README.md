@@ -8,8 +8,10 @@
 4. If you really struggled with making much progress on the problem at all and had to just see the solution, ask chatgpt to generate a similar problem for you to solve for extra practise
 
 ## Table Of Contents
+
 <!-- toc -->
 
+- [Todo](#todo)
 - [Modulus Operator](#modulus-operator)
   * [Explanation](#explanation)
   * [Exercise 1: Divisibility Check](#exercise-1-divisibility-check)
@@ -37,7 +39,8 @@
     + [Exercise 6: Find Factors](#exercise-6-find-factors)
     + [Exercise 7: Check Prime](#exercise-7-check-prime)
     + [Exercise 8: Print Primes](#exercise-8-print-primes)
-    + [Exercise 9: Fibonacci Sequence](#exercise-9-fibonacci-sequence)
+  * [Exercise 9: FizzBuzz](#exercise-9-fizzbuzz)
+  * [Exercise 10: Fibonacci Sequence](#exercise-10-fibonacci-sequence)
   * [Nested loops](#nested-loops)
     + [Exercise 1: Multiplication Table](#exercise-1-multiplication-table)
     + [Exercise 2: Printing a Right-Angle Triangle](#exercise-2-printing-a-right-angle-triangle)
@@ -269,7 +272,50 @@ sum(5) -> 15
 sum(10) -> 55
 ```
 
-#### Exercise 5: Calculate Factorial
+#### Exercise 5: Sum of Multiples
+
+Write a function `sumOfMultiples(x, n)` that calculates and prints the sum of the multiples of `x` up to `n`.
+
+```javascript
+// Examples:
+sumOfMultiples(3, 10);
+// Output: 18 (3 + 6 + 9)
+
+sumOfMultiples(5, 20);
+// Output: 50 (5 + 10 + 15 + 20)
+```
+
+#### Exercise 6: Collatz Conjecture
+
+Write a function `collatz(n)` that prints the sequence of numbers according to the Collatz conjecture, starting from `n`. The rule is: if `n` is even, divide it by 2; if `n` is odd, multiply it by 3 and add 1. Stop when `n` reaches 1.
+
+```javascript
+// Examples:
+collatz(6);
+// Output:
+// 6
+// 3
+// 10
+// 5
+// 16
+// 8
+// 4
+// 2
+// 1
+
+collatz(3);
+// Output:
+// 3
+// 10
+// 5
+// 16
+// 8
+// 4
+// 2
+// 1
+```
+
+#### Exercise 7: Calculate Factorial
 
 Write a function `factorial(n)` that returns `n!`. `n! = n * (n - 1) * ... * 1`.
 
@@ -279,7 +325,7 @@ factorial(5) -> 120
 factorial(3) -> 6
 ```
 
-#### Exercise 6: Find Factors
+#### Exercise 8: Find Factors
 
 Write a function `factors(n)` that prints all the factors of `n`.
 
@@ -295,7 +341,7 @@ factors(12);
 // 12
 ```
 
-#### Exercise 7: Check Prime
+#### Exercise 9: Check Prime
 
 Write a function `isPrime(n)` that returns `true` if `n` is prime, otherwise `false`.
 
@@ -305,7 +351,7 @@ isPrime(7) -> true
 isPrime(10) -> false
 ```
 
-#### Exercise 8: Print Primes
+#### Exercise 10: Print Primes
 
 Write a function `printPrimes(n)` that prints all primes less than or equal to `n`.
 
@@ -319,7 +365,32 @@ printPrimes(10);
 // 7
 ```
 
-#### Exercise 9: Fibonacci Sequence
+#### Exercise 11: FizzBuzz
+
+Write a function `fizzbuzz(n)` that prints the numbers from 1 to `n`, but for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
+
+```javascript
+// Examples:
+fizzbuzz(15);
+// Output:
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+// Fizz
+// 7
+// 8
+// Fizz
+// Buzz
+// 11
+// Fizz
+// 13
+// 14
+// FizzBuzz
+```
+
+#### Exercise 12: Fibonacci Sequence
 
 Write a function `fibonacci(n)` that prints the first `n` numbers in the Fibonacci sequence.
 
