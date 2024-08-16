@@ -76,8 +76,8 @@
    The modulus operator is particularly handy when dealing with repeating sequences. Imagine you have a repeating string like `"abcd"` that goes on infinitely: `"abcdabcdabcd..."`. If you want to find the character at any given position in this sequence, you can use the modulus operator. For example:
 
    - To find the character at position `n`, calculate `n % 4`. The result will tell you where you are in the sequence because it tells how many extra are left after fitting as many chunks of 4 "abcd" into n
-     - If `n % 4 = 0`, the character is `d` (the sequence fits perfectly into `n`).
-     - If `n % 4 = 1`, the character is `a` (the sequence starts over with 1 extra position).
+     - If `n % 4 = 0`, the character is `d` (the repeating sequence "abcd" fits into `n` exactly).
+     - If `n % 4 = 1`, the character is `a` (the repeating sequence "abcd" fits into `n` with 1 extra left over).
      - If `n % 4 = 2`, the character is `b`.
      - If `n % 4 = 3`, the character is `c`.
 
