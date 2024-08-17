@@ -77,10 +77,10 @@
    The modulus operator is particularly handy when dealing with repeating sequences. Imagine you have a repeating string like `"abcd"` that goes on infinitely: `"abcdabcdabcd..."`. Assume it's 0 indexed so "a" is in the 0th position, "b" in the 1st and so on. If you want to find the character at an arbitrary index, the key insight is that if you start at some index say 0, for every lot of 4 you go forward you'll end up at the same character in the sequence e.g. start at index 0 "a" => for every lot of 4 you add you'll still be at "a", start at index 1 "b" => for every lot of 4 you go add you'll still be at "b" etc... so given at arbitrary index say 21, this can be expressed as a multiple of 4 add its remainder 21=5\*4 + 1 => start at index 1 "b" and go forward 5 lots of 4 (which has no affect) and hence you remain at character "b". Hence you just need to calculate position % 4 as this will shove as many 4s in as possible and give you what's left (the starting index) i.e. pos % 4 == 0 => "a", pos % 4 == 1 => "b", pos % 4 == 2 => "c", pos % 4 == 3 => "d"
 
    - To find the character at position `n`, calculate `n % 4`. The result will tell you where you are in the sequence because it tells how many extra are left after fitting as many chunks of 4 "abcd" into n
-     - If `n % 4 = 0`, the character is `a` (the repeating sequence "abcd" fits into `n` exactly).
-     - If `n % 4 = 1`, the character is `b` (the repeating sequence "abcd" fits into `n` with 1 extra left over)
-     - If `n % 4 = 2`, the character is `c`.
-     - If `n % 4 = 3`, the character is `d`.
+     - If `n % 4 = 0`, the character is `a`
+     - If `n % 4 = 1`, the character is `b`
+     - If `n % 4 = 2`, the character is `c`
+     - If `n % 4 = 3`, the character is `d`
 
    So the key is that when have you a repeating sequence, a given `position` can be expressed as `starting point + length_of_repetition * n` which indicates still being at the starting point, hence calculating `position % length_of_repetition` will give you that initial `starting point`.
 
