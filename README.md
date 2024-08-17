@@ -13,45 +13,46 @@
 
 - [Todo](#todo)
 - [Modulus Operator](#modulus-operator)
-  * [Explanation](#explanation)
-  * [Exercise 1: Divisibility Check](#exercise-1-divisibility-check)
-  * [Exercise 2: Determine Parity](#exercise-2-determine-parity)
-  * [Exercise 3: Repeating Number Sequence](#exercise-3-repeating-number-sequence)
-  * [Exercise 4: Pass the Parcel](#exercise-4-pass-the-parcel)
-  * [Exercise 5: Future Day of the Week (difficult)](#exercise-5-future-day-of-the-week-difficult)
+  - [Explanation](#explanation)
+  - [Exercise 1: Divisibility Check](#exercise-1-divisibility-check)
+  - [Exercise 2: Determine Parity](#exercise-2-determine-parity)
+  - [Exercise 3: Repeating Number Sequence](#exercise-3-repeating-number-sequence)
+  - [Exercise 4: Pass the Parcel](#exercise-4-pass-the-parcel)
+  - [Exercise 5: Future Day of the Week (difficult)](#exercise-5-future-day-of-the-week-difficult)
 - [Math functions](#math-functions)
-  * [Explanation](#explanation-1)
-  * [Exercise 1: Distance to Nearest Integer](#exercise-1-distance-to-nearest-integer)
-  * [Exercise 2: Calculate Percentage](#exercise-2-calculate-percentage)
-  * [Exercise 3: Coin Flip](#exercise-3-coin-flip)
-  * [Exercise 4: Rock, Paper, Scissors Game](#exercise-4-rock-paper-scissors-game)
-  * [Exercise 5: Generate Random Number](#exercise-5-generate-random-number)
-  * [Exercise 6: Generate Random Integer](#exercise-6-generate-random-integer)
-  * [Exercise 7: Generate Random Integer in Range](#exercise-7-generate-random-integer-in-range)
-  * [Exercise 8: Number Guessing Game](#exercise-8-number-guessing-game)
+  - [Explanation](#explanation-1)
+  - [Exercise 1: Distance to Nearest Integer](#exercise-1-distance-to-nearest-integer)
+  - [Exercise 2: Calculate Percentage](#exercise-2-calculate-percentage)
+  - [Exercise 3: Coin Flip](#exercise-3-coin-flip)
+  - [Exercise 4: Rock, Paper, Scissors Game](#exercise-4-rock-paper-scissors-game)
+  - [Exercise 5: Generate Random Number](#exercise-5-generate-random-number)
+  - [Exercise 6: Generate Random Integer](#exercise-6-generate-random-integer)
+  - [Exercise 7: Generate Random Integer in Range](#exercise-7-generate-random-integer-in-range)
+  - [Exercise 8: Number Guessing Game](#exercise-8-number-guessing-game)
 - [Loops](#loops)
-  * [Simple loops](#simple-loops)
-    + [Exercise 1: Loop Through Range](#exercise-1-loop-through-range)
-    + [Exercise 2: Countdown with Blast Off](#exercise-2-countdown-with-blast-off)
-    + [Exercise 3: Print Even Numbers](#exercise-3-print-even-numbers)
-    + [Exercise 4: Sum of Integers](#exercise-4-sum-of-integers)
-    + [Exercise 5: Sum of Multiples](#exercise-5-sum-of-multiples)
-    + [Exercise 6: Collatz Conjecture](#exercise-6-collatz-conjecture)
-    + [Exercise 7: Calculate Factorial](#exercise-7-calculate-factorial)
-    + [Exercise 8: Find Factors](#exercise-8-find-factors)
-    + [Exercise 9: Check Prime](#exercise-9-check-prime)
-    + [Exercise 10: Print Primes](#exercise-10-print-primes)
-    + [Exercise 11: FizzBuzz](#exercise-11-fizzbuzz)
-    + [Exercise 12: Fibonacci Sequence](#exercise-12-fibonacci-sequence)
-  * [Nested loops](#nested-loops)
-    + [Exercise 1: Multiplication Table](#exercise-1-multiplication-table)
-    + [Exercise 2: Printing a Right-Angle Triangle](#exercise-2-printing-a-right-angle-triangle)
-    + [Exercise 3: Border of a Square](#exercise-3-border-of-a-square)
-    + [Exercise 4: Pyramid Pattern (difficult)](#exercise-4-pyramid-pattern-difficult)
+  - [Simple loops](#simple-loops)
+    - [Exercise 1: Loop Through Range](#exercise-1-loop-through-range)
+    - [Exercise 2: Countdown with Blast Off](#exercise-2-countdown-with-blast-off)
+    - [Exercise 3: Print Even Numbers](#exercise-3-print-even-numbers)
+    - [Exercise 4: Sum of Integers](#exercise-4-sum-of-integers)
+    - [Exercise 5: Sum of Multiples](#exercise-5-sum-of-multiples)
+    - [Exercise 6: Collatz Conjecture](#exercise-6-collatz-conjecture)
+    - [Exercise 7: Calculate Factorial](#exercise-7-calculate-factorial)
+    - [Exercise 8: Find Factors](#exercise-8-find-factors)
+    - [Exercise 9: Check Prime](#exercise-9-check-prime)
+    - [Exercise 10: Print Primes](#exercise-10-print-primes)
+    - [Exercise 11: FizzBuzz](#exercise-11-fizzbuzz)
+    - [Exercise 12: Fibonacci Sequence](#exercise-12-fibonacci-sequence)
+  - [Nested loops](#nested-loops)
+    - [Exercise 1: Multiplication Table](#exercise-1-multiplication-table)
+    - [Exercise 2: Printing a Right-Angle Triangle](#exercise-2-printing-a-right-angle-triangle)
+    - [Exercise 3: Border of a Square](#exercise-3-border-of-a-square)
+    - [Exercise 4: Pyramid Pattern (difficult)](#exercise-4-pyramid-pattern-difficult)
 
 <!-- tocstop -->
 
 ## Todo
+
 - Loops
   - Menus
 - Arrays & Strings
@@ -73,17 +74,15 @@
    The modulus operator is also useful for checking if one number divides evenly into another. For instance, `35 % 7` equals `0`, which tells us that 7 divides 35 perfectly with no remainder. If the result of `a % b` is `0`, it indicates that `b` is a divisor of `a`. More examples include `12 % 4 = 0` (4 divides 12 evenly) and `20 % 5 = 0` (5 divides 20 evenly).
 
 3. **Working with Repeating Sequences**:  
-   The modulus operator is particularly handy when dealing with repeating sequences. Imagine you have a repeating string like `"abcd"` that goes on infinitely: `"abcdabcdabcd..."`. If you want to find the character at any given position in this sequence, you can use the modulus operator. For example:
+   The modulus operator is particularly handy when dealing with repeating sequences. Imagine you have a repeating string like `"abcd"` that goes on infinitely: `"abcdabcdabcd..."`. Assume it's 0 indexed so "a" is in the 0th position, "b" in the 1st and so on. If you want to find the character at an arbitrary index, the key insight is that if you start at some index say 0, for every lot of 4 you go forward you'll end up at the same character in the sequence e.g. start at index 0 "a" => for every lot of 4 you add you'll still be at "a", start at index 1 "b" => for every lot of 4 you go add you'll still be at "b" etc... so given at arbitrary index say 21, this can be expressed as a multiple of 4 add its remainder 21=5\*4 + 1 => start at index 1 "b" and go forward 5 lots of 4 (which has no affect) and hence you remain at character "b". Hence you just need to calculate position % 4 as this will shove as many 4s in as possible and give you what's left (the starting index) i.e. pos % 4 == 0 => "a", pos % 4 == 1 => "b", pos % 4 == 2 => "c", pos % 4 == 3 => "d"
 
    - To find the character at position `n`, calculate `n % 4`. The result will tell you where you are in the sequence because it tells how many extra are left after fitting as many chunks of 4 "abcd" into n
-     - If `n % 4 = 0`, the character is `d` (the repeating sequence "abcd" fits into `n` exactly).
-     - If `n % 4 = 1`, the character is `a` (the repeating sequence "abcd" fits into `n` with 1 extra left over).
-     - If `n % 4 = 2`, the character is `b`.
-     - If `n % 4 = 3`, the character is `c`.
+     - If `n % 4 = 0`, the character is `a` (the repeating sequence "abcd" fits into `n` exactly).
+     - If `n % 4 = 1`, the character is `b` (the repeating sequence "abcd" fits into `n` with 1 extra left over)
+     - If `n % 4 = 2`, the character is `c`.
+     - If `n % 4 = 3`, the character is `d`.
 
-   This approach can be applied to any repeating pattern, allowing you to easily determine the value at any arbitrary position in the sequence.
-
-In summary, whenever you encounter problems involving cycles, patterns, or repetition, the modulus operator is a powerful tool to simplify your calculations and determine the position within the cycle.
+   So the key is that when have you a repeating sequence, a given `position` can be expressed as `starting point + length_of_repetition * n` which indicates still being at the starting point, hence calculating `position % length_of_repetition` will give you that initial `starting point`.
 
 ### Exercise 1: Divisibility Check
 
@@ -107,15 +106,15 @@ parity(7) -> "false"
 
 ### Exercise 3: Repeating Number Sequence
 
-imagine you have a sequence of numbers that repeats forever going 5, 10, 15, 5, 10, 15 etc... write a function that takes in the position in a sequence and returns the number at that position
+imagine you have a sequence of numbers that repeats forever going 5, 10, 15, 5, 10, 15 etc... write a function that takes in the position in a sequence and returns the number at that position. Assume the sequence is 0 indexed.
 
 ```javascript
 // Examples:
-numberAtPosition(1) -> 5
-numberAtPosition(2) -> 10
-numberAtPosition(3) -> 15
-numberAtPosition(4) -> 5
-numberAtPosition(100) -> 5
+numberAtPosition(0) -> 5
+numberAtPosition(1) -> 10
+numberAtPosition(2) -> 15
+numberAtPosition(3) -> 5
+numberAtPosition(99) -> 5
 ```
 
 ### Exercise 4: Pass the Parcel
