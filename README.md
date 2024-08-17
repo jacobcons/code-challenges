@@ -82,7 +82,7 @@
      - If `n % 4 = 2`, the character is `c`
      - If `n % 4 = 3`, the character is `d`
 
-   So the key is that when have you a repeating sequence, a given `position` can be expressed as `starting point + length_of_repetition * n` which indicates still being at the starting point, hence calculating `position % length_of_repetition` will give you that initial `starting point`.
+   So the key is that when have you a repeating sequence, a given `position` can be expressed as `starting point + length_of_repetition * n` which indicates still being at the starting point, hence calculating `position % length_of_repetition` will give you that initial `starting point`
 
 ### Exercise 1: Divisibility Check
 
